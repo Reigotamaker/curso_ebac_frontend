@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css" />
+    <title>Gazeta do EBAC</title>
+</head>
+    <body>
+        
+                    <div id="clock">
+                        <script>
+                            function updateClock() {
+                                var now = new Date();
+                                var hours = now.getHours().toString().padStart(2, '0');
+                                var minutes = now.getMinutes().toString().padStart(2, '0');
+                                var seconds = now.getSeconds().toString().padStart(2, '0');
+                                var day = now.getDate().toString().padStart(2, '0');
+                                var month = (now.getMonth() + 1).toString().padStart(2, '0'); // Os meses em JavaScript são baseados em 0.
+                                var year = now.getFullYear();
+                                var timeString = hours + ':' + minutes + ':' + seconds;
+                                var dateString = day + '/' + month + '/' + year;
+                                document.getElementById('clock').innerHTML = timeString + '<br>' + dateString;
+                            }
+
+                            setInterval(updateClock, 1000);
+                            updateClock();
+                </script>
+        </div>
+        <div class="marquee">
+            <p>
+               🔔 Últimas notícias: Projeto com Arduino concluído! | Impressão 3D em alta performance! | Novas soluções em inovação lançadas hoje! 🚀
+           </p>
+
+        </div>
+        <header>
+            <div class = "container">
+                    <h1>Gazeta EBAC</h1>
+                    <h4>Seu portal de notícias e informações do dia!</h4>
+                <nav>
+                    <ul>
+                        <li>
+                             <a class="botao-azul" href="#Esportes" title="Ir para a seção de esportes">Esportes</a>
+                        </li>
+                        <li>
+                            <a class="botao-azul" href="#economy" title="Ir para a seção de notícias">Econômia</a>
+                        </li>
+                         <li>
+                            <a class="botao-azul" href="#entretenimento" title="ir para a seção de entertenimento">Entretenimento</a>
+                        </li>
+                        <li>
+                            <a class="botao-azul" href="#Atualidades e Fofocas" title="ir para a seção de atualizades">Atualidades e Fofocas</a>
+                        </li>
+                    </ul>
+                
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div class = "container"> 
+                     <h2>Esportes</h2> 
+                <div class = "articles">
+                    <article>
+                        <img src="./imagens/futebol.jpg" alt="Bola de futebol no gramado" />
+                        <header>
+                            <time>13/07/2025 às 12:35</time>
+                        </header>
+                        <h3>Grande clássico na noite de hoje</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore
+                            architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error?
+                            Laborum, modi itaque. Sunt.
+                        </p>
+                        <a href="#" title="Leia a notícia completa">Ler mais</a>
+                    </article>
+                    <article>
+                        <img src="./imagens/futebol-americano.jpg" alt="Jogador de futebol americano correndo com a bola na mão" />
+                        <header>
+                            <time>13/07/2022 às 12:35</time>
+                        </header>
+                        <h3>Noite do Superbowl</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore
+                            architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error?
+                            Laborum, modi itaque. Sunt.
+                        </p>
+                        <a href="#" title="Leia a notícia completa">Ler mais</a>
+                    </article>
+                    <article>
+                        <img src="./imagens/basquete.jpg" title="Vista aérea de uma quadra de basquete" />
+                        <header>
+                            <time>13/07/2022 às 12:35</time>
+                        </header>
+                        <h3>Notícia sobre a NBA</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore
+                            architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error?
+                            Laborum, modi itaque. Sunt.
+                        </p>
+                        <a href="#" title="Leia a notícia completa">Ler mais</a>
+                    </article>
+                    <article>
+                        <img src="./imagens/basquete.jpg" title="Vista aérea de uma quadra de basquete" />
+                        <header>
+                            <time>13/07/2022 às 12:35</time>
+                        </header>
+                        <h3>Notícia sobre a NBA</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore
+                            architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error?
+                            Laborum, modi itaque. Sunt.
+                        </p>
+                        <a href="#" title="Leia a notícia completa">Ler mais</a>
+                </article>
+            </div>
+        </section>
+
+
+        <section>  
+            <div class = "container">                               
+                    <h2>Entretenimento</h2>
+                <div class = "articles">
+                    <article>
+                        <img src="./imagens/miltonfacebook.avif" alt="Miltoon Nascimento"/>
+                        <header>
+                            <time>13/07/2022 às 12:35</time>
+                        </header>
+                        <h3>    MEMÓRIA</h3>
+                        <p>
+                           <p> ♫ MEMÓRIA</p>
+
+                            ♪ A foto acima flagra Milton Nascimento em outubro de 1967 no palco armado no ginásio carioca Maracanãzinho para a transmissão da segunda das sete edições do Festival Internacional da Canção, popularmente chamado de FIC. Então ainda desconhecido, Milton levou o prêmio de Melhor intérprete do festival e viu a canção Travessia – a primeira composta por ele com o parceiro letrista Fernando Brant (1946 – 2015) – abocanhar o segundo lugar no festival.
+                            Foi o primeiro FIC transmitido pela TV Globo (a primeira edição foi veiculada em 1966 pela TV Rio, emissora já extinta). Ali, ao projetar a imagem e a voz vitoriosa de Milton Nascimento para todo o Brasil, a emissora carioca – inaugurada em 26 de abril de 1965, há exatos 60 anos – começou a (ajudar a) escrever da música brasileira.
+                            Essa história ganhou capítulos emocionantes a partir de 1969, quando a Globo começou a produzir trilhas sonoras para as novelas. A primeira trilha original foi a de Véu de noiva, trama que inaugurou a era das novelas naturalistas, ambientadas no Brasil.
+                            A partir dos anos 1970, as trilhas de novelas amplificaram músicas e cantores, a ponto de gerar modismos e movimentos. Em 1974, já entronizado no posto de cantor mais popular do Brasil, Roberto Carlos entrou para o elenco da emissora para apresentar especial de fim de ano que se tornaria tradição no Natal do povo brasileiro por 50 anos.
+                            Em 1975, ano que a Globo revelou Djavan no festival Abertura (tentativa vã de reviver a efervescência da era dos festivais dos anos 1960), a trilha sonora da novela Gabriela projetou o mesmo Djavan e também a voz de Gal Costa (1945 – 2022), cantora cultuada desde 1967 em nichos de contracultura, mas ainda sem uma real popularidade nacional da dimensão do canto cristalino.
+                            Um ano depois, em 1976, a trilha de Anjo mau projetou Guilherme Arantes e a trama e a trilha da novela Estúpido cupido (1976 / 1977) conseguiram a proeza de revitalizar as carreiras dos cantores que inauguram o universo pop brasileiro, a partir do binômio 1958 / 1959, com rocks que abriram alas para o surgimento da Jovem Guarda em 1965. Intérprete da música-título da novela, a então já esquecida Celly Campello (1942 – 2003) ficou novamente popular.
+                            Em 1978, foi a vez de a novela Dancin’ days popularizar a disco music no Brasil em nível massivo, a ponto de cantores de outros estilos, como Gilberto Gil e Ney Matogrosso, terem flertado com o som cintilante das discotecas. Em 1980, o diretor Daniel Filho estreitou os laços da Globo com a MPB ao criar a série Grandes nomes, composta por especiais comandados por um único artista, com direito a convidados estelares no palco e na plateia.
+                            Os programas de Elis Regina (1945 – 1982) e Rita Lee (1947 – 2023) se tornaram antológicos. Até o arisco João Gilberto (1931 – 2019) deu as caras. Naquela altura, ter uma música em trilha de novela da TV Globo já simbolizava o passaporte imediato para o sucesso em todo o Brasil.
+                            Quase todos os grandes ídolos da MPB, como Caetano Veloso e Maria Bethânia, foram favorecidos pela exposição nessa vitrine sonora nacional, ampliada quando o apresentador Abelardo Barbosa (1917 – 1988), o Chacrinha, voltou para a Globo em 1982 para comandar o Cassino do Chacrinha, programa fundamental para a veiculação de músicas ao longo dos anos 1980.
+                            Foi nessa década que, precisamente em 1986, o mesmo Daniel Filho da série Grandes nomes criou o programa Chico & Caetano, importante inclusive por trazer o então refratário Chico Buarque para a tela da TV Globo. O programa marcou época pelos encontros dos dois anfitriões com convidados como Cazuza (1958 – 1990) e Mercedes Sosa (1935 – 2009).
+                            Merecem ainda menções honrosas nos anos 1980 as trilhas sonoras blockbusters das novelas Roque Santeiro (1985) e Tieta (1989), ambas com várias músicas compostas para as respectivas tramas.
+                            A partir da década de 1990, a Globo entrou no circuito sertanejo, percebendo a força dessa música em todo o Brasil. O especial Amigos – com Chitãozinho & Xororó, Leandro & Leonardo e Zezé Di Camargo & Luciano, então as três duplas sertanejas mais populares do país – abriu a porteira por onde ainda entram desdobramentos como o recente especial Amigas, atração de 2024 focada no recente feminejo.
+                           Da era dos festivais ao império sertanejo, passando por Roberto Carlos, pela MPB, pelo apogeu da axé music e pelo samba, a TV Globo deu contribuição relevante para a propagação da música brasileira ao longo desses 60 anos, criando uma história que ainda ganhará muitos novos capítulos pelas próximas décadas.
+                        </p>
+                        <a href="#" title="Leia a notícia completa">Ler mais</a>
+                        
+                    </article>
+                    <article>
+                        <img src="./imagens/jujuba-turminha.jpg" alt="Imagem colorida e vibrante do desenho animado Turminha da Jujuba. Em primeiro plano, aparecem sete personagens infantis em estilo cartoon, todos com expressões alegres e amigáveis. Da esquerda para a direita: uma coruja com óculos e camisa azul; um rinoceronte cinza tocando violino; uma girafa laranja com manchas vermelhas e cabelo rosa, no centro, sorrindo e levantando os braços; um macaco marrom balançando-se por uma trepadeira; um passarinho amarelo voando; um panda pequeno acenando; e uma raposa laranja segurando uma lupa, olhando atentamente. O fundo é um cenário de floresta estilizada em tons de verde e azul, com luzes suaves. No canto superior direito está o título Turminha da Jujuba, com letras coloridas e decoradas com flores rosas. No rodapé, aparece o logotipo da empresa Toon Boom, apoiadora do projeto."/>
+                        <header>
+                            <time>15:10 26/04/2025</time>
+                        </header>
+                        <h3>
+                            Animação brasileira inova ao unir entretenimento e desenvolvimento infantil.
+                        </h3>
+                        <p>
+                        <h4>Série "Turminha da Jujuba" apresenta personagens únicos e propõe nova forma de dialogar com as infâncias diversas</h4>
+                            Um novo projeto de animação infantil brasileiro está prestes a chegar ao público com uma proposta que promete transformar a maneira como se aborda o desenvolvimento emocional e social das crianças. Criada pela psicóloga Juliana Carvalho Barbato e pelo produtor audiovisual Thiago Barros de Andrade, “Turminha da Jujuba” aposta em um conteúdo educativo e afetivo, ambientado em uma vila fictícia onde a empatia e a diversidade ganham protagonismo.
+                            A série apresenta episódios de oito minutos, protagonizados por personagens cativantes como Pandu, o panda, Caco, o macaco, Rafa, a raposa, Nino, o rinoceronte e a girafa Jujuba, que conduz as histórias. Cada episódio aborda situações do dia a dia da infância — desde a hora de escovar os dentes até a dificuldade em lidar com frustrações ou mudanças de rotina — sempre de forma lúdica e cuidadosamente pensada.
+                            O diferencial da série está na construção dos personagens, que apresentam comportamentos e formas de interação inspiradas em perfis diversos de desenvolvimento. Com sutileza e naturalidade, “Turminha da Jujuba” convida o público a compreender diferentes jeitos de ver o mundo — sem rótulos ou explicações didáticas. Aqueles que convivem com crianças neurodivergentes certamente reconhecerão traços familiares nos protagonistas.
+                            Segundo Juliana, que atua há mais de dez anos com desenvolvimento infantil no Brasil e nos Estados Unidos, o objetivo é criar uma experiência envolvente que vá além do entretenimento. “A gente quer ajudar a construir pontes de compreensão. As crianças se encantam com os personagens e, ao mesmo tempo, aprendem sobre respeito, acolhimento e formas mais suaves de se comunicar”, explica a psicóloga.
+                            A série utiliza estratégias da Análise do Comportamento Aplicada (ABA), vídeo-modelação e histórias sociais para reforçar o aprendizado de maneira leve e eficaz. E tudo isso sem nunca perder a essência encantadora de uma boa história.
+                            Na parte executiva, o projeto é liderado por Thiago Andrade, da produtora 12 Filmes. Ele destaca o potencial multiplataforma da iniciativa: “A animação é o primeiro passo. Estamos trabalhando também em aplicativos, materiais de apoio para famílias e educadores, e brinquedos que possam estender essa experiência para o dia a dia da criança”, conta.
+                            “Turminha da Jujuba” é, acima de tudo, uma celebração da infância em todas as suas formas — com suas diferenças, descobertas e desafios. Um projeto que convida crianças (e adultos) a olharem para o outro com mais empatia e curiosidade. Sem rótulos, com muito afeto.
+                        </p>
+                        <a href="#" title="Leia a notícia completa">Ler mais</a>
+                    </article>
+                    </div>
+                </section>
+                     <section>
+                        <div class = "container">                               
+                            <h2>Economia</h2>
+                        <div class = "articles">
+                            <article>
+                                <img src="./imagens/dolares.jpg" alt="Muitos dólares"/>
+                                <header>
+                                    <time>13/07/2022 às 12:35</time>
+                                </header>
+                                <h3>Dólar em alta de 0.50%</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore
+                                    architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error?
+                                    Laborum, modi itaque. Sunt.
+                                </p>
+                                <a href="#" title="Leia a notícia completa">Ler mais</a>
+                            </article>
+                            <article>
+                                <img src="./imagens/euro.jpg" alt="Várias notas de euro" />
+                                <header>
+                                    <time>13/07/2022 às 12:35</time>
+                                </header>
+                                <h3>Euro em queda de 0.40%</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore
+                                    architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error?
+                                    Laborum, modi itaque. Sunt.
+                                </p>
+                                <a href="#" title="Leia a notícia completa">Ler mais</a>
+                            </article>
+                            <article>
+                                <img src="./imagens/petroleo.jpg" alt="Extração de petróleo" />
+                                <header>
+                                    <time>13/07/2022 às 12:35</time>
+                                </header>
+                                <h3>Alta no preço do barril do petróleo</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore
+                                    architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error?
+                                    Laborum, modi itaque. Sunt.
+                                </p>
+                                <a href="#" title="Leia a notícia completa">Ler mais</a>
+                            </article>
+                        </div>
+                    </section>
+                    <section>
+                        <div class = "container">                               
+                            <h2>Atualidades e Fofocas</h2>
+                        <div class = "articles">
+                            <article>
+                                <img src="./imagens/william-bonner-1.webp" alt="Imagem de jornalista William Bonner um homem maduro, de pele clara e cabelo curto grisalho, sorrindo durante uma entrevista em um estúdio de televisão. Ele tem barba cerrada e veste uma camiseta preta com uma jaqueta também preta. O ambiente ao fundo é escuro, com luzes desfocadas que sugerem uma cidade iluminada à noite. O homem gesticula com as mãos abertas, transmitindo simpatia e descontração."/>
+                                <header>
+                                    <time>13/07/2022 às 12:35</time>
+                                </header>
+                                <h3><p>Ele está há quase 30 anos no comando do Jornal Nacional!</p></h3>
+                                <p>
+                                    O jornalista William Bonner foi o convidado especial da edição do Conversa com Bial desta última sexta-feira (25), na tela da TV Globo. Na ocasião, durante o programa, o comandante do Jornal Nacional acabou confirmando que a aposentadoria encontra-se em seus planos, porém, ele destacou que ainda não sabe ao certo quando que isso vai acontecer.
+                                    “Quando? Eu não posso dizer. Também não vou dizer para você que será de 'sombra e água fresca', porque eu tenho um exemplo na minha família. Meu pai trabalhou muito. Aí em um dia ele decidiu: ‘Não dá mais! Eu preciso parar, eu estou ficando louco’. E ele mergulhou em um processo de envelhecimento acelerado quando parou, porque parou de uma vez. Então é até uma questão de saúde mental”, declarou o jornalista.
+                                    + William Bonner noticia morte de famosa durante o Jornal Nacional
+                                    Ele ainda revelou que o seu plano é ter um futuro tranquilo, e continuar trabalhando com algo que lhe exija menos esforço.
+                                    “O meu sonho é ter uma atividade bacana, relevante, que não demande tanto de mim para que sobre para mim o quê? Uma coisa chamada tempo! Eu tenho dois filhos que moram fora do Brasil. Eu preciso de tempo”, falou Bonner.
+                                    DIA EM QUE QUASE CONGELOU
+                                    Durante a exibição do Jornal Nacional da última quinta (24), ao ver o colega Cesar Tralli em meio a um intenso frio em Roma, o jornalista acabou relembrando do dia em que ele quase ‘congelou’, no mesmo lugar.
+                                    + Renata Vasconcellos e William Bonner destacam possível prisão de Bolsonaro no JN: “Por atentar a democracia”
+                                    “Tralli, você falou do frio. Toda minha solidariedade. Vinte anos atrás, quando morreu o João Paulo II, eu estava aí em Roma. Houve uma noite em que eu apresentava o ‘Jornal Nacional’ nessas condições que César Tralli se encontra e eu congelei”, disse William Bonner na ocasião.
+                                    “Em um intervalo comercial, me agachei e não consegui levantar mais. Acredite, fui salvo por uma manta de lã do pessoal da BBC que estava perto e viu minha situação, e eu me recuperei para voltar”, completou o jornalista.
+                                </p>
+                                <a href="#" title="Leia a notícia completa">Ler mais</a>
+                            </article>
+                            <article>
+                                <img src="./imagens/1230947949-leandro-karnal-marido-vitor-fadul.webp" alt="Vitor Fadul e Leandro Karnal em auditório" />
+                                <header>
+                                    <time>13/07/2022 às 12:35</time>
+                                </header>
+                                <h3><p>Marido de Leandro Karnal 33 anos mais novo, revela como lidou com diferença de idade</p></h3>
+                                    <p>
+                                    Vitor Fadul e Leandro Karnal vivem um relacionamento sólido há 5 anos, apesar das reações sobre a diferença de idade entre eles. O cantor, de 29 anos, admite que nunca imaginou viver uma história de amor com um homem tão mais velho, mas destaca que foi uma descoberta genuína.
+                                    "Eu encontrei o amor em uma pessoa que nunca imaginei encontrar", declarou ele em entrevista ao Cérebro Pod.
+                                    O artista relembrou uma previsão feita por sua mãe, que faleceu recentemente, e que acreditava desde o início que Leandro seria seu grande amor. "Eu achei que ela estivesse completamente doida", disse, mas com o tempo, percebeu que a relação o instiga a se conhecer melhor.
+                                    Segundo ele, a troca entre os dois acontece justamente pelas diferenças, que tornaram o vínculo ainda mais profundo. Vitor também compartilhou que seu casamento enfrentou momentos difíceis, especialmente antes de seu diagnóstico de autismo.
+                                   </p>
+                                <a href="#" title="Leia a notícia completa">Ler mais</a>
+                            </article>
+                            <article>
+                                <img src="./imagens/1294416364-cachorro-vence-ex-tutor-na-justica-e-ganha-indenizacao-de-r-5-mil-por-agressao.webp" alt="Cachorro branco com manchas pretas na pelagem e expressão de assustado." />
+                                <header>
+                                    <time>13/07/2022 às 12:35</time>
+                                </header>
+                                <h3><p>Cachorro vence ex-tutor na Justiça e ganha indenização de R$ 5 mil por agressão</p></h3>
+                                    <p>
+                                        Conhecido como Tokinho, cachorro vence ex-tutor na Justiça após sofrer maus tratos!
+                                    </p>
+                                    <p>O movimento de proteção aos animais teve uma vitória significativa nessa semana. Isso porque o cachorro Tokinho venceu o próprio ex-tutor na Justiça após ser vítima de maus-tratos e agora deve receber uma indenização de R$ 5 mil pela tortura que viveu. 
+                                        O pet sofreu agressões que foram documentadas em câmeras de segurança de Ponta Grossa, nos Campos Gerais do Paraná. A juíza Poliana Maria Cremasco Fagundes Cunha Wojciechowski definiu que o ex-tutor de Tokinho deverá pagar a quantia por danos morais ao animalzinho doméstico.
+                                        O valor deve ser utilizado pela nova tutora exclusivamente em favor ao pet, mediante a prestação de contas. O criminoso ainda terá que pagar R$ 820 por danos materiais ao Grupo Fauna de Proteção aos Animais, uma ONG que resgata e lutas pelos direitos dos animais de Ponta Grossa. Foi a organização, inclusive, que resgatou Tokinho dos maus-tratos.
+                                        As agressões:
+                                        O caso correu na 3ª Vara Cível de Ponta Grossa. O ex-tutor foi preso em flagrante enquanto agredia o cachorrinho com um pedaço de pau em junho de 2023. No processo, ele disse que estava tentando separar a briga entre o animal e um outro cachorro da família e ainda disse que Tokinho não apresentou sinais de violência ao ir ao veterinário. A juíza, porém, negou a versão dizendo que tudo foi capturado pelas câmeras de segurança.
+                                        No ano passado, o Grupo Fauna acolheu o animal e entrou na justiça pedindo a indenização. Eles colocaram Tokinho como o autor da ação. Por mais que inusitado, o caso representa um avanço na luta pela proteção aos animais do Brasil.
+                                        
+                                  
+                                    
+                                <a href="#" title="Leia a notícia completa">Ler mais</a>
+                            </article>
+                        </div>
+                    </section>
+                    <section>
+                          <footer class="footer">
+                                <div class="footer-container">
+                                    <div class="footer-section">
+                                    <h3>Gazeta EBAC</h3>
+                                    <p>Seu portal de notícias e informações do dia!</p>
+                                </div>
+                            
+                            
+                                <div class="footer-section">
+                                        <h4>Links úteis</h4>
+                                    <ul>
+                                        <li>
+                                            <a href="/sobre">Sobre nós</a>
+                                        </li>
+                                        <li>
+                                            <a href="/servicos">Serviços</a>
+                                        </li>
+                                        <li>
+                                            <a href="/portfolio">Portfólio</a>
+                                        </li>
+                                        <li>
+                                            <a href="/contato">Contato</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                    <div class="footer-section">
+                                        <h4>Contato</h4>
+                                        <p>Email: contato@empresa.com</p>
+                                        <p>Telefone: (00) 0000-0000</p>
+                                        <p>Endereço: Rua Exemplo, 123, Cidade - UF</p>
+                                    </div>
+                                </div>
+                                <div class="footer-bottom">
+                                <p>&copy; 2025 Gazeta EBAC. Todos os direitos reservados.</p>
+                                </div>
+                    </section>
+            
+        </footer>
+    </style>
+</body>
+
+</html>
